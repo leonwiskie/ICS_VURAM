@@ -8,6 +8,7 @@ AHP ranks the various factors in a hierarchical order and attaches weights to th
 Below is the hierrachy of the factors used in this model. The AHP scores for the model were calculated with AHP OS: https://bpmsg.com/ahp/.
 
 # Using the Model
+
 Step 1: Getting information
 The Model starts at the Home Page where the user can insert an CVE number to gather the CVSS score of the vulnerability and some background information.
 
@@ -31,7 +32,7 @@ System Security Metrics - Security Posture, Visibility, Exposure
 Exploitability Metrics - Exploit Skill Level, Patch Status
 
 
-Vulnerability Advice
+# Vulnerability Advice
 
 Corresponding to the risk of the vulnerability, the model uses 4 different advices on how to best approach the assessed vulnerability. 
 The advices correspond with the patch risk levels of the IEC-62443 3-2, a well known standard for ICS security. Below are the 4 advices the model can produce.
