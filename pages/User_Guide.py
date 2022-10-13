@@ -69,10 +69,12 @@ st.subheader("Risk Factors")
 st.write("The ICS-VURAM Model uses 8 factors that determine the risk of a vulnerability. The factors were selected after various interviews with ICS security experts. \
 This model is not a exhaustive list of risk factors for each ICS but an manageable and easy to operate group of important criteria that infleucne the risk a vulnerability poses to the system and the organization")
 
-st.write(
-    {'Impact Metrics': ['Human and Environmental Safety Impact', 'Process Reliability', 'Process Availability']},
-    {'System Security Metrics':['Security Posture', 'Visibility', 'Exposure']},
-    {'Exploitability Metrics': ['Exploit Skill Level', 'Patch Status']})
+st.write('''
+    Impact Metrics :Human and Environmental Safety Impact, Process Reliability, Process Availability,
+    System Security Metrics: Security Posture, Visibility, Exposure,
+    Exploitability Metrics: Exploit Skill Level, Patch Status
+    '''
+    )
 
 
 st.subheader(" Vulnerability Advice")
