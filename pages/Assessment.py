@@ -67,6 +67,9 @@ mapping = {1:"None", 2:"Low", 3:"Medium", 4:"High"}
 
 ### Session State 
 
+if 'cve' not in st.session_state:
+    st.session_state['cve'] = ""
+
 #st.write(st.session_state['cve'])
 
 ### Assessment
@@ -77,7 +80,7 @@ def show_options(option, result):
     return choice
 
 def show_expander(dict, criterion):
-    with st.expander("Risk Levels" + " " + criterion):
+    with st.expander("Risk Levels : " + " " + criterion):
         st.write(dict)
 
 
@@ -175,13 +178,15 @@ if submitted:
 
     score = sum(scores.values())
 
+    #st.write(score)
+
     ### Match advice with produced score of the risk levels
 
-    if score <= 2.0:
+    if score <= 2.5:
         advice = advices[0]
-    elif score <= 3.0:
+    elif score <= 3.5:
         advice = advices[1]
-    elif score <= 4.0:
+    elif score <= 4.5:
         advice = advices[2]
     else:
         advice = advices[3]
