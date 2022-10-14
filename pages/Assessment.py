@@ -2,7 +2,6 @@ from gettext import find
 from requests import session
 import streamlit as st
 import json
-import nvdlib
 from streamlit_echarts import st_echarts
 
 advices = ['Accept Vulnerability Risk',
@@ -124,8 +123,6 @@ with st.form('Assessing Vulnerabilities in ICSs'):
 ### Print Nightingale Rose Graph to the webpage
 
 if submitted:
-
-    st.session_state = results
 
     with st.container():
 

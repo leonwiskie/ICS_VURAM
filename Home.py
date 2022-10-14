@@ -6,7 +6,6 @@ st.set_page_config(
     page_title = "ICS-VuRAM"
 )
 
-
 st.title("ICS VuRAM: Industrial Vulnerability Risk Assessment Tool")
 
 def get_cve_number():
@@ -34,8 +33,8 @@ def find_cve_number(cve_number):
 ### CVE Information
 start_option = st.radio("Do you have a CVE Number?", ("Yes", "No"))
 
-if "cve" not in st.session_state:
-    st.session_state["cve"] = ""
+if 'cve' not in st.session_state:
+    st.session_state['cve'] = ""
 
 if start_option == "Yes":
     cve = get_cve_number()
@@ -44,4 +43,4 @@ if start_option == "Yes":
     
 else:
     st.success("Thank you! Go to the Assessment.")
-    #st.write(st.session_state["cve"])
+    #st.write(st.session_state)
