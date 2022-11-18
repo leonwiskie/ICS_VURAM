@@ -43,3 +43,10 @@ Vulnerability Advice:
     maintenance cycle.
 -   Resolve or mitigate vulnerability risk within 3 months.
 -   Resolve or mitigate vulnerability risk immediately.
+
+# Using docker for development
+build the container image:  
+docker build -t ics_vuram:latest .
+
+and starting the app container:
+docker run -dp 8501:8501 ics_vuram:latest
